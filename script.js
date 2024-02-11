@@ -40,7 +40,7 @@ function getVerses(){
     const random = Math.floor(Math.random() * 6000)
     const reference = random
     const matnURL = `https://api.quran.com/api/v4/quran/verses/uthmani`
-    const translate = `http://api.alquran.cloud/v1/ayah/${reference + 1}/en.asad`
+    const translate = `https://api.alquran.cloud/v1/ayah/${reference + 1}/en.asad`
 
 
     fetch(matnURL).then(res => {
