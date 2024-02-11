@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="app">
+        <h1 class="main-heading">Ayat of the Day.</h1>
+        <div class="container">
+            <div class="verse-container">
+
+                <h1 class="sub-heading">Arabic Verse</h1>
+                <div class="verse-arabic">
+                    <h2 id="matn">
+                        Click The Button Below
+                    </h2>
+
+                    <div class="loaderbox hidden" id="matnLoader">
+                        <div class="loader"></div>
+                        <h4>Loading Ayah</h4>
+                        </div>
+                
+                </div>
+                <div class="info-container">
+                    <p class="verseInfo" id="verseInfoArabic">VerseInfo</p>
+                </div>
+                </div>
+                <div class="translation-container">
+
+                <h1 class="sub-heading">Translation</h1>
+                <div class="verse-translation">
+                    <h3 id="translation">
+                        Click The Button Below
+                    </h3>
+
+                    <div class="loaderbox hidden" id="translationLoader">
+                        <div class="loader"></div>
+                        <h4>Loading Ayah</h4>
+                        </div>
+                    
+                    <div class="info-container">
+                        <p class="verseInfo" id="verseInfoEnglish">VerseInfo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="init"><img src="img/book.svg" alt=""></button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
