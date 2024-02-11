@@ -15,6 +15,7 @@ body{
     background: rgb(23,40,21);
     background: linear-gradient(45deg, rgba(23,40,21,1) 0%, rgb(53, 49, 13) 10%, rgba(112,146,85,1) 100%);
     font-family: "Roboto", sans-serif;
+    flex-direction: column
 }
 
 .main-heading{
