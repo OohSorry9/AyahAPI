@@ -51,7 +51,6 @@ function getVerses(){
                 let verse = arrayData[reference]
                 matnloader.classList.add('hidden')
                 MatnElement.innerText = verse.text_uthmani;
-                console.log(verse)
             })
     })
 
@@ -63,7 +62,6 @@ function getVerses(){
                 
                 translationLoader.classList.add('hidden')
                 TranslationElement.innerText = `"` + data2.text + `"`;
-                console.log(data2)
                 arbVerseInfo.innerText = data2.surah.name + ` | | ` + data2.numberInSurah;
                 engVerseInfo.innerText = `Surah: ` + data2.surah.englishName + ` | | ` + data2.numberInSurah;
                 
