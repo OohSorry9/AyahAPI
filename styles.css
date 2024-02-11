@@ -125,6 +125,7 @@ body{
     cursor: pointer;
     margin: 10px;
     user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .sub-heading{
