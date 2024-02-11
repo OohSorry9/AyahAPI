@@ -181,8 +181,8 @@ body{
     display: none;
 }
 
-@media screen and (max-height: 800px){
+@media screen and (max-height: 801px){
     .app{
-        height: 650px
+        height: 680px
     }
 }
