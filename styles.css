@@ -188,3 +188,24 @@ body{
         height: 650px
     }
 }
+
+#credit{
+    padding: 5px;
+    font-family: "Roboto", sans-serif;
+}
+#credit a{
+    padding: 0 5px;
+    text-decoration: none;
+    color: dodgerblue;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all ease 300ms;
+
+}
+
+#credit a:hover{
+    color: white;
+    border-bottom: dodgerblue 3px solid;
+
+}
