@@ -124,6 +124,7 @@ body{
     padding: 10px 30px;
     cursor: pointer;
     margin: 10px;
+    user-select: none;
 }
 
 .sub-heading{
