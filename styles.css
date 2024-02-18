@@ -15,7 +15,7 @@ body{
     background: rgb(23,40,21);
     background: linear-gradient(45deg, rgba(23,40,21,1) 0%, rgb(53, 49, 13) 10%, rgba(112,146,85,1) 100%);
     font-family: "Roboto", sans-serif;
-    flex-direction: column
+    flex-direction: column;
 }
 
 .main-heading{
@@ -65,24 +65,8 @@ body{
     background: #3E5622;
 }
 
-.info-container{
-    margin: 10px;
-    display: flex;
-    justify-content: end;
-    align-items: flex-end;
 
-}
 
-.verseInfo{
-    font-size: 1rem;
-    font-weight: bold;
-    background-color: rgba(0, 10, 0, .1);
-    width: 100%;
-    text-align: right;
-    border-radius: 10px;
-    padding:  5px 20px;
-
-}
 
 #verseInfoArabic{
     font-size: 1.5rem;
@@ -125,7 +109,6 @@ body{
     padding: 10px 30px;
     cursor: pointer;
     margin: 10px;
-    user-select: none;
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -184,12 +167,6 @@ body{
     display: none;
 }
 
-@media screen and (max-height: 801px){
-    .app{
-        height: 650px
-    }
-}
-
 #credit{
     padding: 5px;
     font-family: "Roboto", sans-serif;
@@ -210,3 +187,46 @@ body{
     border-bottom: dodgerblue 3px solid;
 
 }
+
+
+.audiobtns{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.audiobtns path:hover{
+    fill: rgba(255, 255, 255, .5)
+}
+
+.info-container{
+    margin: 10px;
+    width: 95%;
+    padding: 0 30px;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-color: rgba(0, 10, 0, .2);
+
+}
+
+.verseInfo-p{
+    font-size: 1rem;
+    font-weight: bold;
+    width: 100%;
+    text-align: right;
+    border-radius: 10px;
+    padding:  5px 20px;
+
+}
+
+.verse-container, .translation-container{
+    width: 100%;
+}
+
+.zeroOpacity {
+    opacity: 0;
+}
+
