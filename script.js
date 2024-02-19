@@ -45,7 +45,6 @@ function init(){
     if(!translationloaded) translationLoader.classList.remove('hidden')
     if(engRad.checked) language = 'en.asad'
     if(urduRad.checked) language = 'ur.ahmedali'
-    console.log(language)
 
     if(language == 'ur.ahmedali') TranslationElement.style.fontSize = '2.5rem';
     if(language == 'en.asad') TranslationElement.style.fontSize = '1.25rem'
@@ -72,8 +71,6 @@ function getVerses(){
                 let verse = arrayData[reference]
                 matnloader.classList.add('hidden')
                 MatnElement.innerText = verse.text_uthmani;
-                console.log(verse)
-                console.log(verse.id)
                 ayahNum = verse.id
             })
     })
