@@ -229,3 +229,11 @@ body{
     opacity: 0;
 }
 
+.translation-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+

@@ -7,6 +7,8 @@ const matnloader = document.getElementById('matnLoader')
 const translationLoader = document.getElementById('translationLoader')
 const recite = document.getElementById('recite')
 const pause = document.getElementById('pause')
+const urduRad = document.getElementById('urdu')
+const engRad = document.getElementById('eng')
 
 
 //Enviornmental Variables
@@ -16,6 +18,7 @@ let translationloaded = false;
 let isPlaying = false
 let ayahNum;
 let recitation = new Audio()
+let language = 'en.asad';
 
 
 button.addEventListener('click', init)
@@ -40,6 +43,13 @@ function init(){
 
     if(!matnloaded) matnloader.classList.remove('hidden')
     if(!translationloaded) translationLoader.classList.remove('hidden')
+    if(engRad.checked) language = 'en.asad'
+    if(urduRad.checked) language = 'ur.ahmedali'
+    console.log(language)
+
+    if(language == 'ur.ahmedali') TranslationElement.style.fontSize = '2.5rem';
+    if(language == 'en.asad') TranslationElement.style.fontSize = '1.25rem'
+
     setTimeout(getVerses,1000)
 
 }
@@ -51,7 +61,7 @@ function getVerses(){
     const random = Math.floor(Math.random() * 6000)
     const reference = random
     const matnURL = `https://api.quran.com/api/v4/quran/verses/uthmani`
-    const translate = `https://api.alquran.cloud/v1/ayah/${reference + 1}/en.asad`
+    const translate = `https://api.alquran.cloud/v1/ayah/${reference + 1}/${language}`
 
 
     fetch(matnURL).then(res => {
@@ -85,14 +95,6 @@ function getVerses(){
 
     
 }
-
-function update(){
-    requestAnimationFrame(update)
-    console.log('audio playback is ' + isPlaying)
-}
-
-update()
-
 
 function togglePlay(audio){
 
